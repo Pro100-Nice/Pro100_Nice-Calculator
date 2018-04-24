@@ -11,7 +11,7 @@ int main(int argc, char * argv[])
 		char* p1, *p2;
 		double argument1 = strtod(argv[1], &p1);
 		double argument2 = strtod(argv[3], &p2);
-		if (strlen(p1) != 0 || strlen(p2) != 0)
+		if ((p1 != '\0') || (p2 != '\0'))
 			cout << "Error. The extra operand is not a numeric part.";
 		else
 		{
