@@ -4,11 +4,11 @@
 using namespace std;
 int main(int argc, char * argv[])
 {
-	if (argc != 4)
+	/*if (argc != 4)
 	{
 		cout << "Error. Parameters should be 4.";
 		return 1;
-	}
+	}*/
 	char* p1, *p2;
 	double argument1 = strtod(argv[1], &p1);
 	double argument2 = strtod(argv[3], &p2);
