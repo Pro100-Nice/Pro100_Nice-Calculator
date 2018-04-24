@@ -36,13 +36,13 @@ int main(int argc, char * argv[])
 		cout << argument1 + argument2;
 	else if (argv[2][0] == '-' && abs(argument1 - argument2) != HUGE_VAL)
 		cout << argument1 - argument2;
-	else if (argv[2][0] == '/' && argument2 != 0 && abs(argument1 - argument2) != HUGE_VAL)
+	else if (argv[2][0] == '/' && abs(argument1 - argument2) != HUGE_VAL)
 		cout << argument1 / argument2;
 	else if (argv[2][0] == '*' && abs(argument1 * argument2) != HUGE_VAL)
 		cout << argument1 * argument2;
 	else
 	{
-		cout << "Error. The result of the calculations is beyond the limits of admissible values. Or there is a division by 0.";
+		cout << "Error. The result of the calculations is beyond the limits of admissible values.";
 		return 6;
 	}
 	return 0;
